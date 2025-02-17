@@ -2,7 +2,7 @@
 
 | Formula | Description |
 | ------- | ----------- |
-| [ksail](https://github.com/devantler/ksail)   | A CLI tool for provisioning GitOps enabled K8s clusters in Docker. |
+| [ksail](https://github.com/devantler/ksail)   | An SDK for Kubernetes. |
 
 <details>
   <summary>Show/Hide Folder Structure</summary>

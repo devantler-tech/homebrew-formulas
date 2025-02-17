@@ -1,4 +1,4 @@
-# Devantler Formulas
+# DevantlerTech Formulas
 
 | Formula | Description |
 | ------- | ----------- |

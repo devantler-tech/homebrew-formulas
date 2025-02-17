@@ -2,7 +2,7 @@
 
 | Formula | Description |
 | ------- | ----------- |
-| [ksail](https://github.com/devantler/ksail)   | An SDK for Kubernetes. |
+| [ksail](https://github.com/devantler-tech/ksail)   | An SDK for Kubernetes. |
 
 <details>
   <summary>Show/Hide Folder Structure</summary>
@@ -22,9 +22,9 @@
 
 ## How do I install these formulae?
 
-`brew install devantler/formulas/<formula>`
+`brew install devantler-tech/formulas/<formula>`
 
-Or `brew tap devantler/formulas` and then `brew install <formula>`.
+Or `brew tap devantler-tech/formulas` and then `brew install <formula>`.
 
 ## Documentation
 

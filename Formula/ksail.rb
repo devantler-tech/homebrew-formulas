@@ -1,8 +1,8 @@
 class Ksail < Formula
   desc "SDK for Kubernetes"
   homepage "https://github.com/devantler-tech/ksail"
-  license "MIT"
   sha256 "12a19ca431019f99596fbbb3b6e53197b9374efa9f886c09ca5493581cec8913"
+  license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?

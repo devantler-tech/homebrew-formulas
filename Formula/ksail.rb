@@ -1,9 +1,22 @@
 class Ksail < Formula
   desc "SDK for Kubernetes"
   homepage "https://github.com/devantler-tech/ksail"
-  url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail.tar.gz"
   sha256 "12a19ca431019f99596fbbb3b6e53197b9374efa9f886c09ca5493581cec8913"
   license "MIT"
+
+  if OS.mac?
+    if Hardware::CPU.arm?
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-darwin-arm64"
+    elsif Hardware::CPU.intel?
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-darwin-amd64"
+    end
+  elsif OS.linux?
+    if Hardware::CPU.arm?
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-linux-arm64"
+    elsif Hardware::CPU.intel?
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-linux-amd64"
+    end
+  end
 
   livecheck do
     url :stable
@@ -11,19 +24,7 @@ class Ksail < Formula
   end
 
   def install
-    if OS.mac?
-      if Hardware::CPU.arm?
-        bin.install "ksail-darwin-arm64" => "ksail"
-      elsif Hardware::CPU.intel?
-        bin.install "ksail-darwin-amd64" => "ksail"
-      end
-    elsif OS.linux?
-      if Hardware::CPU.arm?
-        bin.install "ksail-linux-arm64" => "ksail"
-      elsif Hardware::CPU.intel?
-        bin.install "ksail-linux-amd64" => "ksail"
-      end
-    end
+    bin.install "ksail-#{OS.kernel_name.downcase}-#{Hardware::CPU.arch}" => "ksail"
   end
 
   test do

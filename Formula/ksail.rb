@@ -1,7 +1,7 @@
 class Ksail < Formula
   desc "SDK for Kubernetes"
   homepage "https://github.com/devantler-tech/ksail"
-  sha256 "12a19ca431019f99596fbbb3b6e53197b9374efa9f886c09ca5493581cec8913"
+  sha256 "93fe6c61797468e1c92a240a735a5b442421f9977c959d12e434c79e8174d0fc"
   license "MIT"
 
   if OS.mac?

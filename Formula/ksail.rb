@@ -3,7 +3,7 @@ class Ksail < Formula
   homepage "https://github.com/devantler-tech/ksail"
   url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail.tar.gz"
   sha256 "fbf6f4d84eed228861f1854d8bb256eda6f4ba51a9eb0585022496852d76deae"
-  license "MIT"
+  license "Apache-2.0"
 
   livecheck do
     url :stable

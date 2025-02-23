@@ -3,6 +3,11 @@ class Ksail < Formula
   homepage "https://github.com/devantler-tech/ksail"
   license "MIT"
 
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-darwin-arm64"
@@ -19,11 +24,6 @@ class Ksail < Formula
       url "https://github.com/devantler-tech/ksail/releases/download/v2.5.0/ksail-linux-amd64"
       sha256 "93fe6c61797468e1c92a240a735a5b442421f9977c959d12e434c79e8174d0fc"
     end
-  end
-
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   def install

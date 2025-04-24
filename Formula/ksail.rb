@@ -20,7 +20,7 @@ class Ksail < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-arm64"
-      sha256 "16c921b75f284012f9de64ba2df3d45a1c3f5829210ba601b0ce8ec7d6ad0485"
+      sha256 "53523e6828d3a028277466fc2c2460b309ba0334b9d150e3d86a69a393525112"
 
       def install
         bin.install "ksail-darwin-arm64" => "ksail"

@@ -7,8 +7,8 @@ class Ksail < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-amd64"
-      sha256 "3af40b508d70813e461a2d8cfddbc11abc576643c775419c289669cd55394fec"
+      url "https://github.com/devantler-tech/ksail/archive/refs/tags/v2.25.3.tar.gz"
+      sha256 "66d03155bb09a1c3ad46774f8066881968f3fcb0b4a562a33e93d6b50aa88c26"
 
       def install
         bin.install "ksail-darwin-amd64" => "ksail"

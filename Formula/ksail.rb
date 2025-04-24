@@ -1,9 +1,7 @@
 class Ksail < Formula
   desc "SDK for Kubernetes"
   homepage "https://github.com/devantler-tech/ksail"
-
   license "Apache-2.0"
-
 
   on_macos do
     if Hardware::CPU.intel?

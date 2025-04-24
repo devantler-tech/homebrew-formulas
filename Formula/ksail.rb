@@ -5,8 +5,8 @@ class Ksail < Formula
   license "Apache-2.0"
 
   livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    url "https://github.com/devantler-tech/ksail/releases"
+    regex(/href=.*?\/tag\/v?(\d+(?:\.\d+)+)["' >]/i)
   end
 
   on_macos do

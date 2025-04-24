@@ -11,20 +11,20 @@ class Ksail < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-        url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-amd64"
-        sha256 "3af40b508d70813e461a2d8cfddbc11abc576643c775419c289669cd55394fec"
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-amd64"
+      sha256 "3af40b508d70813e461a2d8cfddbc11abc576643c775419c289669cd55394fec"
 
-        def install
-          bin.install "ksail-darwin-amd64" => "ksail"
-        end
+      def install
+        bin.install "ksail-darwin-amd64" => "ksail"
+      end
     end
     if Hardware::CPU.arm?
-        url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-arm64"
-        sha256 "16c921b75f284012f9de64ba2df3d45a1c3f5829210ba601b0ce8ec7d6ad0485"
+      url "https://github.com/devantler-tech/ksail/releases/download/v2.25.1/ksail-darwin-arm64"
+      sha256 "16c921b75f284012f9de64ba2df3d45a1c3f5829210ba601b0ce8ec7d6ad0485"
 
-        def install
-          bin.install "ksail-darwin-arm64" => "ksail"
-        end
+      def install
+        bin.install "ksail-darwin-arm64" => "ksail"
+      end
     end
   end
   on_linux do

@@ -1,0 +1,12 @@
+name: Auto-merge
+on:
+  pull_request:
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  auto-merge:
+    uses: devantler-tech/workflows/.github/workflows/auto-merge.yaml@main
+    secrets: inherit

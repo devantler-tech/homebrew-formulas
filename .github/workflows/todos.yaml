@@ -1,6 +1,5 @@
 name: "TODOs"
-permissions:
-  contents: read
+permissions: {}
 on:
   workflow_dispatch:
   push:

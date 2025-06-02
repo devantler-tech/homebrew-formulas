@@ -1,8 +1,8 @@
 class Ksail < Formula
   desc "SDK for Kubernetes"
   homepage "https://github.com/devantler-tech/ksail"
-  url "https://github.com/devantler-tech/ksail/releases/download/v2.31.44/ksail.tar.gz"
-  sha256 "04a7cab2f3e465a030cfcdee9b3b2cfd143acde8924f8f99b346d02117da93de"
+  url "https://github.com/devantler-tech/ksail/releases/download/v2.31.45/ksail.tar.gz"
+  sha256 "e50e1640c9f20fe12c9ff71219d5ab87a5b3df431a4f64a2aba5dcd82fcab0e5"
   license "Apache-2.0"
 
   livecheck do

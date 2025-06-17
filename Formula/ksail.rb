@@ -20,7 +20,7 @@ class Ksail < Formula
   depends_on "sops"
   depends_on "argocd" => :optional
   depends_on "cilium-cli" => :optional
-  depends_on "fluxcd/tap/flux" => :optional
+  depends_on "fluxcd/homebrew-tap/flux" => :optional
   depends_on "k3d" => :optional
   depends_on "talosctl" => :optional
 

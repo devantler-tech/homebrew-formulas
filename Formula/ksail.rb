@@ -11,17 +11,17 @@ class Ksail < Formula
   end
 
   depends_on "age"
-  depends_on "argocd" => :optional
-  depends_on "cilium-cli" => :optional
-  depends_on "fluxcd/tap/flux" => :optional
   depends_on "helm"
-  depends_on "k3d" => :optional
   depends_on "k9s"
   depends_on "kind"
   depends_on "kubeconform"
   depends_on "kubectl"
   depends_on "kustomize"
   depends_on "sops"
+  depends_on "argocd" => :optional
+  depends_on "cilium-cli" => :optional
+  depends_on "fluxcd/tap/flux" => :optional
+  depends_on "k3d" => :optional
   depends_on "talosctl" => :optional
 
   def install

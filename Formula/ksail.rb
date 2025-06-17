@@ -10,14 +10,14 @@ class Ksail < Formula
     strategy :github_latest
   end
 
-  depends_on "age"
   depends_on "helm"
   depends_on "k9s"
   depends_on "kind"
   depends_on "kubeconform"
   depends_on "kubectl"
   depends_on "kustomize"
-  depends_on "sops"
+  depends_on "age" => :recommended
+  depends_on "sops" => :recommended
   depends_on "argocd" => :optional
   depends_on "cilium-cli" => :optional
   depends_on "fluxcd/homebrew-tap/flux" => :optional

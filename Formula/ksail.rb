@@ -41,6 +41,6 @@ class Ksail < Formula
   end
 
   test do
-    system "#{bin}/ksail", "--version"
+    system bin/"ksail", "--version"
   end
 end

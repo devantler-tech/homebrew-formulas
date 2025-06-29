@@ -19,7 +19,7 @@ class Ksail < Formula
   depends_on "k9s"
   depends_on "kind"
   depends_on "kubeconform"
-  depends_on "kubectl"
+  depends_on "kubernetes-cli"
   depends_on "kustomize"
   depends_on "sops"
   depends_on "talosctl"

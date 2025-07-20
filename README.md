@@ -4,22 +4,6 @@
 | ------- | ----------- |
 | [ksail](https://github.com/devantler-tech/ksail)   | An SDK for Kubernetes. |
 
-<details>
-  <summary>Show/Hide Folder Structure</summary>
-
-<!-- readme-tree start -->
-```
-.
-├── .github
-│   └── workflows
-└── Formula
-
-4 directories
-```
-<!-- readme-tree end -->
-
-</details>
-
 ## How do I install these formulae?
 
 `brew install devantler-tech/formulas/<formula>`

@@ -5,13 +5,13 @@
 class Ksail < Formula
   desc "KSail is a CLI tool to manage clusters and workloads."
   homepage "https://github.com/devantler-tech/ksail"
-  version "5.0.7"
+  version "5.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/devantler-tech/ksail/releases/download/v5.0.7/ksail_5.0.7_darwin_arm64.tar.gz"
-      sha256 "9b21a97ea799d11f02679389c58ad6bce40e169cf5649d2048169e49d361a00a"
+      url "https://github.com/devantler-tech/ksail/releases/download/v5.1.0/ksail_5.1.0_darwin_arm64.tar.gz"
+      sha256 "539ca7843fd5acc2918baa4a49a101d6b6b4b06a2989d4dcd669e8a89b71455d"
 
       def install
         bin.install "ksail"
@@ -21,15 +21,15 @@ class Ksail < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devantler-tech/ksail/releases/download/v5.0.7/ksail_5.0.7_linux_amd64.tar.gz"
-      sha256 "f75d543f181898cc33681bb29b0017a0a642c4d091e6c60a99bb04708b66b74c"
+      url "https://github.com/devantler-tech/ksail/releases/download/v5.1.0/ksail_5.1.0_linux_amd64.tar.gz"
+      sha256 "c1aae702be40bb312b9ad41c028686a6858a50b8319244c4fa600e191c6933e9"
       def install
         bin.install "ksail"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devantler-tech/ksail/releases/download/v5.0.7/ksail_5.0.7_linux_arm64.tar.gz"
-      sha256 "6eb35e6cd333b5738543a2c5b7821745fb4b53fb8e7be77bb799460b3feae904"
+      url "https://github.com/devantler-tech/ksail/releases/download/v5.1.0/ksail_5.1.0_linux_arm64.tar.gz"
+      sha256 "2966f12c8df993b02ac1e7b5bfe4b57784031a354e63c2169453435a2cdfb657"
       def install
         bin.install "ksail"
       end

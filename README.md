@@ -4,11 +4,18 @@
 | ------- | ----------- |
 | [ksail](https://github.com/devantler-tech/ksail)   | An SDK for Kubernetes. |
 
-## How do I install these formulae?
 
-`brew install devantler-tech/formulas/<formula>`
+## How do I install these Casks?
 
-Or `brew tap devantler-tech/formulas` and then `brew install <formula>`.
+`brew install --cask devantler-tech/tap/<cask>`
+
+Or `brew tap devantler-tech/tap` and then `brew install --cask <cask>`.
+
+## How do I install these Formulas?
+
+`brew install devantler-tech/tap/<formula>`
+
+Or `brew tap devantler-tech/tap` and then `brew install <formula>`.
 
 ## Documentation
 
